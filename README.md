@@ -2,7 +2,7 @@
 
 ## Ejecutar el programa
 
-Para inicar el programa debe ejecutar el siguiene comando:
+Para iniciar el programa, ejecute el siguiente comando:
 
 ```shell
 python src/main.py
@@ -44,10 +44,7 @@ Módulo para la gestión de datos de la biblioteca.
 
 Modelo de datos para representar libros.
 
-### `src/utils/formato.py`
-
-Utilidades para formateo de datos.
-
 ### `src/utils/operaciones.py`
 
-Operaciones auxiliares del sistema.
+Operaciones para mostrar libros disponibles, buscar libros por cantidad de
+páginas, agregar categorías y consultar estadísticas.
