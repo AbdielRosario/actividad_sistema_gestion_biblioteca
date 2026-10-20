@@ -1,5 +1,8 @@
 # Sistema Gestión de Biblioteca
 
+**Estudiante:** ABDIEL ANTONIO ROSARIO  
+**Matrícula:** LR-2025-04460
+
 ## Ejecutar el programa
 
 Para iniciar el programa, ejecute el siguiente comando:
