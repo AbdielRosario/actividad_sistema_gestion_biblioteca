@@ -12,12 +12,12 @@ continuar = "s"
 while continuar == "s":
     print("\n=== BIBLIOTECA ===")
     print("1. Ver libros disponibles")
-    print("2. Buscar libros cortos (menos de 400 páginas)")
-    print("3. Ver estadísticas")
-    print("4. Agregar categoría")
+    print("2. Buscar libros cortos (menos de 400 paginas)")
+    print("3. Ver estadisticas")
+    print("4. Agregar categoria")
     print("5. Salir")
 
-    opcion = input("Elige una opción: ")
+    opcion = input("Elige una opcion: ")
 
     if opcion == "1":
         mostrar_disponibles(libros)
@@ -25,19 +25,19 @@ while continuar == "s":
         buscar_por_paginas(libros, 400)
     elif opcion == "3":
         print(f"Cantidad de libros: {contar_libros(libros)}")
-        print(f"Promedio de páginas: {promedio_paginas(libros):.2f}")
+        print(f"Promedio de paginas: {promedio_paginas(libros):.2f}")
     elif opcion == "4":
-        nueva_categoria = input("Escribe la nueva categoría: ").strip()
+        nueva_categoria = input("Escribe la nueva categoria: ").strip()
         if not nueva_categoria:
-            print("La categoría no puede estar vacía.")
+            print("La categoria no puede estar vacia.")
         elif nueva_categoria in categorias:
-            print("Esa categoría ya existe.")
+            print("Esa categoria ya existe.")
         else:
             agregar_categoria(categorias, nueva_categoria)
-            print(f'Categoría "{nueva_categoria}" agregada.')
-            print(f"Categorías: {', '.join(sorted(categorias))}")
+            print(f'Categoria "{nueva_categoria}" agregada.')
+            print(f"Categorias: {', '.join(sorted(categorias))}")
     elif opcion == "5":
         continuar = "n"
         print("¡Hasta pronto!")
     else:
-        print("Opción no válida. Elige un número del 1 al 5.")
+        print("Opcion no valida. Elige un numero del 1 al 5.")
